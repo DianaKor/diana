@@ -58,10 +58,10 @@ function showSlidesMobile(n) {
         slidesMobile[i].style.display = "none";
     }
     for (i = 0; i < dotsMobile.length; i++) {
-        dotsMobile[i].className = dotsMobile[i].className.replace(" active", "");
+        dotsMobile[i].className = dotsMobile[i].className.replace(" activemobile", "");
     }
     slidesMobile[slideIndexMobile - 1].style.display = "block";
-    dotsMobile[slideIndexMobile - 1].className += " active";
+    dotsMobile[slideIndexMobile - 1].className += " activemobile";
 }
 
 
@@ -79,7 +79,7 @@ function calc() {
         alert("Вы не указали описание!");
     } else {
         {
-            let pricePerCm = 50;
+            let pricePerCm = 15;
             let size = (height) * Math.pow(width, 2);
             document.getElementById('size').innerHTML = "Объем: " + size + " см в кубе";
             let price = size * pricePerCm;

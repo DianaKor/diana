@@ -450,7 +450,6 @@ header {
     }
 
     .slidermobile {
-    display: block;
     max-width: 100%;
     position: relative;
     height: 100px;
@@ -461,7 +460,7 @@ header {
     .slidermobile .mobileitem img {
     object-fit: cover;
     width: 100%;
-    height: 100px;
+    height: 80px;
     }
 
     .slidermobile .prev, .slidermobile .next {
@@ -492,7 +491,7 @@ header {
 
     .slider-dots-mobile {
     text-align: center;
-    display: block;
+    display: inline-block;
     }
 
     .slider-dots-mobile_item {

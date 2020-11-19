@@ -41,27 +41,27 @@ function plusSlideMobile() {
 function minusSlideMobile() {
     showSlides(slideIndexMobile -= 1);
 }
-function currentSlideMobile(k) {
-    showSlides(slideIndexMobile = k);
+function currentSlideMobile(n) {
+    showSlides(slideIndexMobile = n);
 }
-function showSlidesMobile(k) {
-    let o;
+function showSlidesMobile(n) {
+    let i;
     let slidesMobile = document.getElementsByClassName("mobileitem");
     let dotsMobile = document.getElementsByClassName("slider-dots-mobile_item");
-    if (k > slidesMobile.length) {
+    if (n > slidesMobile.length) {
         slideIndexMobile = 1
     }
-    if (k < 1) {
+    if (n < 1) {
         slideIndexMobile = slidesMobile.length
     }
-    for (o = 0; o < slidesMobile.length; o++) {
-        slidesMobile[o].style.display = "none";
+    for (i = 0; i < slidesMobile.length; i++) {
+        slidesMobile[i].style.display = "none";
     }
-    for (o = 0; o < dotsMobile.length; o++) {
-        dotsMobile[o].className = dotsMobile[o].className.replace(" activemobile", "");
+    for (i = 0; i < dotsMobile.length; i++) {
+        dotsMobile[i].className = dotsMobile[i].className.replace(" active", "");
     }
     slidesMobile[slideIndexMobile - 1].style.display = "block";
-    dotsMobile[slideIndexMobile - 1].className += " activemobile";
+    dotsMobile[slideIndexMobile - 1].className += " active";
 }
 
 

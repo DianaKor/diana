@@ -41,10 +41,10 @@ function plusSlideMobile() {
 function minusSlideMobile() {
     showSlides(slideIndexMobile -= 1);
 }
-function currentSlideMobile(n) {
+function currentSlideMobile(k) {
     showSlides(slideIndexMobile = k);
 }
-function showSlidesMobile(n) {
+function showSlidesMobile(k) {
     let o;
     let slidesMobile = document.getElementsByClassName("mobileitem");
     let dotsMobile = document.getElementsByClassName("slider-dots-mobile_item");

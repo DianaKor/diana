@@ -33,35 +33,35 @@ function showSlides(n) {
 }
 
 var slideIndexMobile = 1;
-showSlides(slideIndex);
+showSlides(slideIndexMobile);
 
 function plusSlideMobile() {
-    showSlides(slideIndex += 1);
+    showSlides(slideIndexMobile += 1);
 }
 function minusSlideMobile() {
-    showSlides(slideIndex -= 1);
+    showSlides(slideIndexMobile -= 1);
 }
 function currentSlideMobile(n) {
-    showSlides(slideIndex = n);
+    showSlides(slideIndexMobile = k);
 }
 function showSlidesMobile(n) {
-    let i;
-    let slides = document.getElementsByClassName("mobileitem");
-    let dots = document.getElementsByClassName("slider-dots-mobile_item");
-    if (n > slides.length) {
-        slideIndex = 1
+    let o;
+    let slidesMobile = document.getElementsByClassName("mobileitem");
+    let dotsMobile = document.getElementsByClassName("slider-dots-mobile_item");
+    if (k > slidesMobile.length) {
+        slideIndexMobile = 1
     }
-    if (n < 1) {
-        slideIndex = slides.length
+    if (k < 1) {
+        slideIndexMobile = slidesMobile.length
     }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    for (o = 0; o < slidesMobile.length; o++) {
+        slidesMobile[o].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" activemobile", "");
+    for (o = 0; o < dotsMobile.length; o++) {
+        dotsMobile[o].className = dotsMobile[o].className.replace(" activemobile", "");
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " activemobile";
+    slidesMobile[slideIndexMobile - 1].style.display = "block";
+    dotsMobile[slideIndexMobile - 1].className += " activemobile";
 }
 
 
